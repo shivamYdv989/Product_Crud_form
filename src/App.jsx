@@ -50,12 +50,7 @@ function App() {
         localStorage.setItem('products', JSON.stringify(data));
         setAction('deleted')
       }
-    },
-    clearData = () => {
-      if (data && confirm('Are you sure you want to clear all data?')) {
-        localStorage.removeItem('products');
-      }
-    };
+    }
   const btnCancel = () => resetForm();
   data = JSON.parse(localStorage.getItem('products'));
   return (
